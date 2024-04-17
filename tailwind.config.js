@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        DM: ["DM Sans", "sans-serif"]
+        DM: ["DM Sans", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       colors: {
         'primary':'#343CAD',
