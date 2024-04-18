@@ -10,7 +10,7 @@ const Experience = () => {
 
   return (
     <div className="pl-[2.5rem] pr-[2.5rem]   h-[90vh]  w-screen  bg-background  overflow-hidden ">
-      <div className="h-[20vh] w-full">
+      <div className="h-[20vh] w-full ">
         <h1 className="text-center pt-6 h-full font-semibold text-gray-800 font-DM  text-[42px] tracking-wide">
           Skills & Experience
         </h1>

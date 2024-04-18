@@ -2,14 +2,14 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-[10vh] m-auto bg-background z-40">
-        <div className="flex gap-16 justify-center items-end h-full pb-1 font-DM font-medium text-[16px] uppercase">
+      <div className="w-full h-[10vh] m-auto bg-background ">
+        <div className="flex gap-16 justify-center items-end h-full pb-1 font-DM font-medium text-[16px] uppercase ">
           <NavLink
             to="/"
             className={({ isActive }) =>
               ` duration-200 ${
                 isActive ? 'text-primary' : 'text-gray-500'
-              }  hover:text-primary`
+              }  hover:text-primary z-50`
             }
           >
             <div className="flex justify-center">
@@ -22,7 +22,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `duration-200 ${
                 isActive ? 'text-primary' : 'text-gray-500'
-              } hover:text-primary`
+              } hover:text-primary z-50`
             }
           >
             Projects
@@ -32,7 +32,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `duration-200 ${
                 isActive ? 'text-primary' : 'text-gray-500'
-              } hover:text-primary`
+              } hover:text-primary z-50`
             }
           >
             Experience
@@ -42,7 +42,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `duration-200 ${
                 isActive ? 'text-primary' : 'text-gray-500'
-              } hover:text-primary`
+              } hover:text-primary z-50`
             }
           >
             Testimonial
@@ -52,7 +52,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               `duration-200 ${
                 isActive ? 'text-primary' : 'text-gray-500'
-              } hover:text-primary`
+              } hover:text-primary z-50`
             }
           >
             Contact
