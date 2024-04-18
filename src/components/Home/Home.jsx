@@ -1,9 +1,4 @@
 import Bubble from '../Bubble/Bubble';
-import heroImg from '../../assets/hero.png';
-import hand from '../../assets/hand.png';
-import code from '../../assets/code.png';
-import bulb from '../../assets/bulb.png';
-import pc from '../../assets/pc.png';
 const Home = () => {
   return (
     <div className=" relative h-[90vh]  w-screen bg-background  overflow-hidden">
@@ -19,7 +14,7 @@ const Home = () => {
           opacity="opacity-50"
           z_index="z-0"
         />
-        <img src={heroImg} className="w-[500px] z-20" alt="Logo" />
+        <img src="/img/hero.png" className="w-[500px] z-20" alt="Logo" />
       </div>
 
       {/* card */}
@@ -27,7 +22,7 @@ const Home = () => {
         <div className="flex gap-5 items-center bg-[#fff] rounded-xl px-8 py-6 shadow-lg">
           {/* img */}
           <div>
-            <img src={hand} className="w-[50px]" alt="" />
+            <img src="/img/hand.png" className="w-[50px]" alt="" />
           </div>
           <div>
             <p className="font-DM font text-[16px] font-medium text-gray_2 leading-3">
@@ -55,7 +50,7 @@ const Home = () => {
       <div className="absolute top-[80px] right-[360px]">
         <div className="flex flex-col items-center gap-3">
           <div className="flex justify-center items-center bg-[#fff] h-[80px] w-[80px] rounded-full">
-            <img src={code} className="w-12" alt="" />
+            <img src="/img/code.png" className="w-12" alt="" />
           </div>
           <p className="font-DM font text-[14px] font-bold text-gray-600 leading-none uppercase tracking-wide">
             MOBILE DEVELOPMENT
@@ -67,7 +62,7 @@ const Home = () => {
         <div className="flex flex-col items-center gap-3">
           <div className="flex justify-center items-center bg-gradient-to-bl from-fuchsia-300 to-zinc-100 h-[130px] w-[130px] rounded-full">
             <img
-              src={pc}
+              src="/img/pc.png"
               className="w-[260px] object-cover -ml-10 -mt-8"
               alt=""
             />
@@ -82,7 +77,7 @@ const Home = () => {
         <div className="flex flex-col items-center gap-3">
           <div className="flex justify-center items-center bg-[#1664FF] bg-opacity-[80%]  h-[60px] w-[60px] rounded-full">
             <img
-              src={bulb}
+              src="/img/bulb.png"
               className="w-[230px] object-cover mt-[4px] ml-[1px]"
               alt=""
             />

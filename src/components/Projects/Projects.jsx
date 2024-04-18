@@ -1,11 +1,4 @@
-import R1 from '../../assets/r1.png';
-import R2 from '../../assets/r2.png';
-import R3 from '../../assets/r3.png';
-import R4 from '../../assets/r4.png';
-import R5 from '../../assets/r5.png';
-import R6 from '../../assets/r6.png';
-import R7 from '../../assets/r7.png';
-import R8 from '../../assets/r8.png';
+
 import Bubble from '../Bubble/Bubble';
 const Projects = () => {
   return (
@@ -20,7 +13,7 @@ const Projects = () => {
           <div className=" flex flex-col gap-5 h-full w-[39%] z-20">
             <div className=" h-[32%] flex justify-end">
               <img
-                src={R1}
+                src="/img/r1.png"
                 alt="nike-web-clone"
                 className="h-full hover:scale-105 transition ease-in-out duration-300"
               />
@@ -29,14 +22,14 @@ const Projects = () => {
               <div className=" flex gap-5 flex-col h-full w-[62%]">
                 <div className=" flex justify-end h-[38%]">
                   <img
-                    src={R2}
+                    src="/img/r2.png"
                     alt="user-management-system"
                     className="h-full object-cover object-center hover:scale-105 transition ease-in-out duration-300"
                   />
                 </div>
                 <div className="flex justify-end h-[62%]">
                   <img
-                    src={R4}
+                    src="/img/r4.png"
                     alt="crypto"
                     className="w-[180px] hover:scale-105 transition ease-in-out duration-300"
                   />
@@ -44,7 +37,7 @@ const Projects = () => {
               </div>
               <div className=" h-[90%] w-[38%] ">
                 <img
-                  src={R3}
+                  src="/img/r3.png"
                   alt="notes-app"
                   className="w-full h-full object-fill object-center hover:scale-105 transition ease-in-out duration-300"
                 />
@@ -53,7 +46,7 @@ const Projects = () => {
           </div>
           <div className=" h-full w-[22%] z-20">
             <img
-              src={R5}
+              src="/img/r5.png"
               alt="Qahwa Space"
               className="w-full object-cover hover:scale-105 transition ease-in-out duration-300"
             />
@@ -62,14 +55,14 @@ const Projects = () => {
             <div className=" flex gap-5 h-[58%] ">
               <div className="w-[34%] h-full ">
                 <img
-                  src={R6}
+                  src="/img/r6.png"
                   alt="crypto"
                   className="w-[180px] h-full object-fill object-center hover:scale-105 transition ease-in-out duration-300"
                 />
               </div>
               <div className="w-[68%] flex justify-start items-end h-full">
                 <img
-                  src={R7}
+                  src="/img/r7.png"
                   alt="pick drop"
                   className="w-full hover:scale-105 transition ease-in-out duration-300"
                 />
@@ -77,7 +70,7 @@ const Projects = () => {
             </div>
             <div className=" h-[40%] flex justify-start mb-4">
               <img
-                src={R8}
+                src="/img/r8.png"
                 alt="med emergency"
                 className=" object-fill object-center hover:scale-105 transition ease-in-out duration-300"
               />
