@@ -3,15 +3,16 @@ import LeftTestimonial from '../TestimonialComp/LeftTestimonial';
 import RightTestimonial from '../TestimonialComp/RightTestimonial';
 import Testimonialdata from '../../DB/Testimonialdata';
 import Bubble from '../Bubble/Bubble';
-import './Scroll.css'
+import './Scroll.css';
 
 const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
+  const [leftindex, setLeftIndex] = useState(0);
 
   useEffect(() => {
     setTestimonials(Testimonialdata);
   }, []);
-  console.log(testimonials);
+  console.log(leftindex);
 
   return (
     <div className="pl-[2.5rem] pr-[2.5rem]  relative h-[90vh]  w-screen  bg-background  overflow-hidden ">
@@ -24,16 +25,22 @@ const Testimonial = () => {
       <div className="h-[70vh] w-full flex ">
         {/* left side */}
         <div className=" h-[350px] z-30 w-[50%] flex justify-end items-start     ">
-          <div className=' h-full flex flex-col justify-start  overflow-y-scroll pr-10 scroll'>
+          <div className=" h-full flex flex-col justify-start  overflow-y-scroll pr-10 scroll">
             {testimonials.map((elm, index) => (
-              <LeftTestimonial person={elm} key={index} />
+              <div  key={index} onClick={()=>setLeftIndex(index)}>
+                <LeftTestimonial person={elm} />
+              </div>
             ))}
           </div>
         </div>
 
         {/* Right side */}
         <div className=" h-full  w-[50%]  flex justify-start  items-start  pl-14">
-         <RightTestimonial />
+          {testimonials.map((elm, index) =>
+            index === leftindex ? ( // Condition
+              <RightTestimonial description={elm.description} key={index} />
+            ) : null // Or another component/element if not positive
+          )}
         </div>
       </div>
 
@@ -56,5 +63,5 @@ const Testimonial = () => {
 export default Testimonial;
 
 // <div>
-//   
+//
 // </div>

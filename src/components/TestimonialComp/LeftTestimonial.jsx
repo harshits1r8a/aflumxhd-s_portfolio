@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 const LeftTestimonial = ({person}) => {
   return (
-    <div className="inline-block m-4 w-[400px]">
-      <div className="flex justify-start items-center gap-5   px-6 py-3 rounded-lg  transition ease-in-out duration-300 hover:shadow-lg hover:scale-105 hover:bg-white">
+    <div className="inline-block m-4 w-[380px]">
+      <div className="flex justify-start items-center gap-5   px-6 py-3 rounded-lg  transition ease-in-out duration-300 hover:shadow-lg hover:scale-105 hover:bg-white focus">
         <div>
           <img
             src={person.img}
-            alt=""
+            alt={person.name}
             className="w-[60px] h-[60px] object-cover object-center rounded-full"
           />
         </div>

@@ -1,8 +1,9 @@
-const RightTestimonial = () => {
-  const value = 3.5;
+import PropTypes from 'prop-types';
+const RightTestimonial = ({description}) => {
+  const value = description.star;
   return (
-    <div>
-      <h1>It was a great experience</h1>
+    <div className="w-[500px]">
+      <h1 className="font-DM text-gray-800 font-medium text-[30px]">{description.title}</h1>
       <span>
         <i
           className={`
@@ -68,17 +69,13 @@ const RightTestimonial = () => {
           }`}
         ></i>
       </span>
-      <p>
-        This can be done in a multitude of ways for example if you are producing
-        a brochure selling wellington boots then start every paragraph spelling
-        out 'buy our wellington boots' or better still 'you have no choice but
-        to buy our wellington boots now get out your cheque book and buy them -
-        NOW!' Another crafty method is to doctor images in photoshop so that on
-        an innocent picture of a tree for example carved into the bark is a
-        message along the lines of 'U Luv Wellington boots' You get the idea.
+      <p className="font-DM font-normal mt-5 text-gray-600 ">{description.message}
       </p>
     </div>
   );
 };
 
+RightTestimonial.propTypes = {
+  description: PropTypes.object,
+};
 export default RightTestimonial;

@@ -5,8 +5,8 @@ const Testimonialdata = [
         pos: "CTO, Intellection",
         description: {
             title: "It was a great experience",
-            star: 5,
-            message: `This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
+            star: 4,
+            message: `Harshit This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
             paragraph spelling out 'buy our wellington boots' or better still 'you have no choice but to buy our wellington boots now get
             out your cheque book and buy them - NOW!'
             
@@ -21,7 +21,7 @@ const Testimonialdata = [
         description: {
             title: "It was a great experience",
             star: 4.5,
-            message: `This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
+            message: `Arpit This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
             paragraph spelling out 'buy our wellington boots' or better still 'you have no choice but to buy our wellington boots now get
             out your cheque book and buy them - NOW!'
             
@@ -35,8 +35,8 @@ const Testimonialdata = [
         pos: "CEO &Product Manager, Intellection",
         description: {
             title: "It was a great experience",
-            star: 5,
-            message: `This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
+            star: 3,
+            message: `Neha This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
             paragraph spelling out 'buy our wellington boots' or better still 'you have no choice but to buy our wellington boots now get
             out your cheque book and buy them - NOW!'
             
@@ -50,8 +50,8 @@ const Testimonialdata = [
         pos: "CEO &Product Manager, Intellection",
         description: {
             title: "It was a great experience",
-            star: 5,
-            message: `This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
+            star: 2,
+            message: `Aflaah This can be done in a multitude of ways for example if you are producing a brochure selling wellington boots then start every
             paragraph spelling out 'buy our wellington boots' or better still 'you have no choice but to buy our wellington boots now get
             out your cheque book and buy them - NOW!'
             
