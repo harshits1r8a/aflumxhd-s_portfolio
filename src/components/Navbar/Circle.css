@@ -1,0 +1,12 @@
+.circle::before {
+    content: "";
+    display: block;
+    width: 5px; /* Adjust width as needed */
+    height: 5px;
+    background-color: #343CAD;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px; /* Adjust top value to position 20px above the heading */
+    left: 50%;
+    transform: translateX(-50%); /* Center the circle horizontally */
+  }

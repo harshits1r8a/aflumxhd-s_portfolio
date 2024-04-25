@@ -110,6 +110,7 @@ const Projects = () => {
           left="left-[130px]"
           opacity="opacity-30"
           z_index="z-0"
+          animation="animate-bounce"
         />
 
         <Bubble
@@ -121,6 +122,7 @@ const Projects = () => {
           left="left-[357px]"
           opacity="opacity-100"
           z_index="z-0"
+          animation="animate-bounce"
         />
 
         <Bubble
@@ -132,6 +134,7 @@ const Projects = () => {
           left="left-[440px]"
           opacity="opacity-100"
           z_index="z-0"
+          animation="animate-bounce"
         />
       </div>
     </>

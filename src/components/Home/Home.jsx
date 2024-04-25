@@ -60,7 +60,7 @@ const Home = () => {
 
       <div className="absolute top-[240px] right-[240px]">
         <div className="flex flex-col items-center gap-3">
-          <div className="flex justify-center items-center bg-gradient-to-bl from-fuchsia-300 to-zinc-100 h-[130px] w-[130px] rounded-full">
+          <div className="flex justify-center items-center bg-gradient-to-bl from-fuchsia-300 to-zinc-100 h-[130px] w-[130px] rounded-full ">
             <img
               src="/img/pc.png"
               className="w-[260px] object-cover -ml-10 -mt-8"
@@ -98,6 +98,7 @@ const Home = () => {
         left="left-[130px]"
         opacity="opacity-70"
         z_index="z-0"
+        animation="animate-bounce"
       />
 
       <Bubble
@@ -109,6 +110,7 @@ const Home = () => {
         left="left-[270px]"
         opacity="opacity-70"
         z_index="z-0"
+        animation="animate-bounce "
       />
 
       <Bubble

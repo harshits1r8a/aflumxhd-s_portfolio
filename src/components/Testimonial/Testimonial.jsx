@@ -8,11 +8,14 @@ import './Scroll.css';
 const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [leftindex, setLeftIndex] = useState(0);
+  
 
   useEffect(() => {
     setTestimonials(Testimonialdata);
   }, []);
   console.log(leftindex);
+
+  
 
   return (
     <div className="pl-[2.5rem] pr-[2.5rem]  relative h-[90vh]  w-screen  bg-background  overflow-hidden ">
@@ -27,7 +30,7 @@ const Testimonial = () => {
         <div className=" h-[350px] z-30 w-[50%] flex justify-end items-start     ">
           <div className=" h-full flex flex-col justify-start  overflow-y-scroll pr-10 scroll">
             {testimonials.map((elm, index) => (
-              <div  key={index} onClick={()=>setLeftIndex(index)}>
+              <div className=''  key={index} onClick={()=>setLeftIndex(index)}>
                 <LeftTestimonial person={elm} />
               </div>
             ))}
@@ -35,7 +38,7 @@ const Testimonial = () => {
         </div>
 
         {/* Right side */}
-        <div className=" h-full  w-[50%]  flex justify-start  items-start  pl-14">
+        <div className=" h-full  w-[50%]  flex justify-start  items-start pt-5  pl-14">
           {testimonials.map((elm, index) =>
             index === leftindex ? ( // Condition
               <RightTestimonial description={elm.description} key={index} />

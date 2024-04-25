@@ -9,11 +9,12 @@ const Bubble = ({
   left = 0,
   opacity = 0,
   z_index = 0,
+  animation
 }) => {
   // Combine Tailwind utility classes for dynamic styling
   const bubbleClasses = `
      ${position} ${width} ${height} ${top} ${left}
-    rounded-full overflow-hidden ${linearGradiant} ${opacity} ${z_index}
+    rounded-full overflow-hidden ${linearGradiant} ${opacity} ${z_index} ${animation}
   `;
 
   return <div className={bubbleClasses}></div>;
@@ -30,6 +31,7 @@ Bubble.propTypes = {
   left: PropTypes.string.isRequired,
   opacity: PropTypes.string.isRequired,
   z_index: PropTypes.string.isRequired,
+  animation: PropTypes.string,
 };
 
 {
