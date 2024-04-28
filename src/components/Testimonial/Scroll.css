@@ -30,14 +30,11 @@
 
 .scroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  /* background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(122, 153, 217)),
-    color-stop(0.72, rgb(73, 125, 189)),
-    color-stop(0.86, rgb(28, 58, 148))
-  ); */
-  /* background-image: linear-gradient(to bottom left,  #f565c0, #f1f5f9); */
   background-color: #cfc4f8;
+}
+
+.active{
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: scale(1.05);
+  background: white;
 }
